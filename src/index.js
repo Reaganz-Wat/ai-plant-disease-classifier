@@ -89,7 +89,7 @@ If no pests are visible, set hasPests to false and provide general plant health 
 
     // Process the image
     const imageData = await fs.readFile(filePath);
-    const model = genAI.getGenerativeModel({ model: "gemini-pro-vision" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
     
     const result = await model.generateContent({
       contents: [{
